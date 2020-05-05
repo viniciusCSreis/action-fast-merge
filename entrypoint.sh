@@ -12,6 +12,7 @@ failMerge() {
             }'
             "
   sh -c "$COMMAND"
+  exit 1
 }
 
 # skip if no /revert
