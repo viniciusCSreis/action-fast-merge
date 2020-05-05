@@ -17,7 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Fast Merge
-        uses: viniciusCSreis/action-fast-merge@v1.0
+        uses: viniciusCSreis/action-fast-merge@v1.0.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
