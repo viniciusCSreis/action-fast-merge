@@ -59,6 +59,7 @@ set -o xtrace
 git fetch origin $HEAD_BRANCH
 git fetch origin $BRANCH_NAME || failMerge $GITHUB_TOKEN $PR_NUMBER "Branch Not Found."
 git checkout $BRANCH_NAME
+git config pull.rebase false
 git pull origin $HEAD_BRANCH || failMerge $GITHUB_TOKEN $PR_NUMBER "Fail to Merge."
 git push
 
